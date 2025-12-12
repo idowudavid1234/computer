@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOSHMAN COMPUTER - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="hero">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <h1 class="logo">JOSHMAN COMPUTER</h1>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product&sevices.html">Products&Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content" id="main-content">
+      <h2>We Sell, Repair & Swap iPhones and Computers</h2>
+      <p>Your trusted tech partner for the latest devices and quality repairs.</p>
+      <a href="product&sevices.html" class="btn">Shop Now</a>
+    </div>
+  </header>
+
+  <section class="services">
+    <h2>Our Key Services</h2>
+    <div class="service-grid">
+      <div class="service-box">
+        <h3>iPhone Sales</h3>
+        <img src="images/images%20(14).jpeg" alt="Brand new and UK used iPhones">
+        <p>Get brand new and UK used iPhones at the best prices.</p>
+      </div>
+      <div class="service-box">
+        <h3>Phone Repairs</h3>
+        <img src="images/images%20(15).jpeg" alt="Phone repair services">
+        <p>We fix screens, batteries, software issues and more.</p>
+      </div>
+      <div class="service-box">
+        <h3>Swap Deals</h3>
+        <img src="images/images%20(16).jpeg" alt="Phone swap deals">
+        <p>Trade your old device for a better one with ease.</p>
+      </div>
+      <div class="service-box">
+        <h3>Buy & Sell Phones</h3>
+        <img src="images/images%20(17).jpeg" alt="Buy and sell phones service">
+        <p>We buy phones and sell quality devices at a good rate.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JOSHMAN COMPUTER. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.getElementById("menu");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navLinks.classList.toggle("active");
+  });
+  </script>
+
+</body>
+</html>

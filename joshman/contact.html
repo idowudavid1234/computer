@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - JOSHMAN COMPUTER</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <h1 class="logo">JOSHMAN COMPUTER</h1>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="product&sevices.html">Products&Services</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+  <section class="services" style="background:#fff;">
+    <h2>Contact Us</h2>
+    <p style="margin: 10px auto; max-width: 800px;">
+      You can reach out to us using the contact details below or send us a message.
+    </p>
+
+    <div style="max-width: 800px; margin: 30px auto; text-align: left;">
+      <h3>Get in Touch</h3>
+      <p><strong>Phone/Whatsapp no:</strong> 07053968991</p>
+      <p><strong>Email:</strong> joshman2363@gmail.com</p>
+      <p><strong>Location:</strong> Shop 98, Rock of Ages Plaza Behind BRT Terminal, Ikotun Lagos, Nigeria.</p>
+    </div>
+
+    <div style="max-width: 800px; margin: 30px auto;">
+      <h3>Send a Message</h3>
+      <form action="mailto:joshman2363@gmail.com" method="post" enctype="text/plain">
+        <input type="text" placeholder="Your Name" required
+          style="width:100%;padding:10px;margin-bottom:15px;border:1px solid #ccc;border-radius:5px;">
+        <input type="email" placeholder="Your Email" required
+          style="width:100%;padding:10px;margin-bottom:15px;border:1px solid #ccc;border-radius:5px;">
+        <textarea placeholder="Order your Gadget" rows="5" required
+          style="width:100%;padding:10px;margin-bottom:15px;border:1px solid #ccc;border-radius:5px;"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="map">
+    <h2>Our Location</h2>
+    <iframe 
+      src="https://www.google.com/maps?q=Shop%2059%2C%20Rock%20of%20Ages%20Plaza%2C%20Behind%20BRT%20Ikotun%2C%20Lagos%2C%20Nigeria&output=embed"
+      width="100%" 
+      height="350" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy"
+      title="JOSHMAN COMPUTER Location">
+    </iframe>
+  </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 JOSHMAN COMPUTER. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.getElementById("menu");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
